@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: Microtubule-Stars
+version: 0.1.0
+date-released: 2026-10-22
+authors:
+  - family-names: Lee
+    given-names: Mun Seok
+license: AGPL-3.0-only
+repository-code: https://github.com/sparkainlp-x
+abstract: >-
+  A holographic brain under a slow cosmic drive: a ring of
+  Kuramoto phase oscillators carrying a holographic
+  phase-pattern memory, modulated by a slow
+  stellar-pulsation-style oscillation (model, not data).
+  Measures that unstructured cross-scale modulation degrades
+  recall monotonically, with no phase locking and no resonance.
+  Includes a research note on five candidate
+  microtubule-to-star linkages with status and falsifiers.
+  Stdlib-only Python, classical throughout.
+keywords:
+  - holographic-memory
+  - kuramoto
+  - cross-frequency-coupling
+  - microtubules
+  - orch-or
+  - wave-computing
