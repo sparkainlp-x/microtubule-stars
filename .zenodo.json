@@ -1,0 +1,46 @@
+{
+  "title": "Microtubule-Stars: classical Kuramoto ring with holographic phase-pattern recall under a slow model drive (SYNTHETIC)",
+  "version": "0.1.0",
+  "upload_type": "software",
+  "description": "<p>SYNTHETIC. Standard-library Python classical Kuramoto simulation: a ring of phase oscillators stores phase-patterns as one interference record and recalls by projection. An optional slow multi-mode oscillation (stellar-pulsation-style model, not stellar data) modulates coupling gain. Measured: unstructured modulation degrades recall monotonically, with no 1:1 phase locking across scales. No quantum mechanics and no consciousness model are simulated; no claim of cosmic influence on brains.</p><p>Acknowledgement: Mun Seok Lee, credited on the original package kept in spec/microtubule-stars/. No endorsement implied.</p>",
+  "creators": [
+    {
+      "name": "Brisson, Jean-François",
+      "orcid": "0009-0000-9778-5374",
+      "affiliation": "Spark AI NLP, Fredericton, New Brunswick, Canada"
+    }
+  ],
+  "license": "AGPL-3.0-only",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "Kuramoto",
+    "holographic memory",
+    "cross-frequency coupling",
+    "classical simulation",
+    "synthetic",
+    "Python"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1126/science.1128115",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://github.com/sparkainlp-x/microtubule-stars",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "references": [
+    "Kuramoto, Y. (1984). Chemical Oscillations, Waves, and Turbulence. Springer.",
+    "Canolty, R. T., et al. (2006). High gamma power is phase-locked to theta oscillations in human neocortex. Science, 313(5793), 1626-1628. https://doi.org/10.1126/science.1128115"
+  ],
+  "communities": [
+    {
+      "identifier": "spark-ai-nlp"
+    }
+  ]
+}

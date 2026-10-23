@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Microtubule-Stars: classical Kuramoto ring with holographic phase-pattern recall under a slow model drive (SYNTHETIC)"
+type: software
+authors:
+  - family-names: "Brisson"
+    given-names: "Jean-François"
+    orcid: "https://orcid.org/0009-0000-9778-5374"
+    affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
+version: 0.1.0
+license: AGPL-3.0-only
+repository-code: "https://github.com/sparkainlp-x/microtubule-stars"
+abstract: >-
+  SYNTHETIC. Standard-library Python classical Kuramoto simulation: a ring
+  of phase oscillators stores phase-patterns as one interference record and
+  recalls by projection. An optional slow multi-mode oscillation
+  (stellar-pulsation-style model, not stellar data) modulates coupling gain.
+  Measured: unstructured modulation degrades recall monotonically, with no
+  1:1 phase locking across scales. No quantum mechanics and no consciousness
+  model are simulated; no claim of cosmic influence on brains.
+keywords:
+  - "kuramoto"
+  - "holographic-memory"
+  - "cross-frequency-coupling"
+  - "classical-simulation"
+  - "synthetic"
+  - "python"
+references:
+  - type: book
+    title: "Chemical Oscillations, Waves, and Turbulence"
+    authors:
+      - family-names: "Kuramoto"
+        given-names: "Yoshiki"
+    year: 1984
+    publisher:
+      name: "Springer"
+  - type: article
+    title: "High gamma power is phase-locked to theta oscillations in human neocortex"
+    authors:
+      - family-names: "Canolty"
+        given-names: "R. T."
+    year: 2006
+    journal: "Science"
+    volume: 313
+    issue: "5793"
+    start: 1626
+    end: 1628
+    doi: "10.1126/science.1128115"
