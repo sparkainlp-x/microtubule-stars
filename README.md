@@ -52,11 +52,11 @@ See [DESIGN.md](DESIGN.md).
 
 ## Provenance
 
-The package as received is kept unchanged in [spec/microtubule-stars/](spec/microtubule-stars/). [CHANGELOG.md](CHANGELOG.md) lists what changed.
+A package received under Mun Seok Lee's name, which lists him as sole author under AGPL-3.0-only, is kept unchanged in [spec/microtubule-stars/](spec/microtubule-stars/). We could not independently verify who wrote it. The main code in this repository is derived from it. `microtubule_stars/core.py` is about 61% line-similar to the received `microstars.py` (now a two-line import shim). The command-line entry point `microtubule_stars/__main__.py` is about 30% similar to the received `demo.py`, and `tests/test_core.py` about 50% similar to the received `tests.py`. The README, DESIGN and RESEARCH files were rewritten (under 35% similarity each). Packaging, input validation and CI were added by this project. Line similarity here comes from a plain diff, not from a review of intent. [CHANGELOG.md](CHANGELOG.md) lists the changes. Mun Seok Lee is not an author of this release, and he has not reviewed or endorsed this software.
 
 ## Acknowledgements
 
-Thanks to Mun Seok Lee, who is credited on the original package kept in [spec/microtubule-stars/](spec/microtubule-stars/). The acknowledgement does not imply his endorsement of this code or its conclusions.
+Thanks to Mun Seok Lee for the package received under his name (see Provenance above). This is an acknowledgement only: it implies no endorsement of this code or its conclusions.
 
 ## References
 

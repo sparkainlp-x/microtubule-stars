@@ -2,6 +2,7 @@
 
 ## 0.1.0 (unreleased)
 
+- Documentation only: added a Provenance statement that says which files are derived from the package received under Mun Seok Lee's name and by how much, that he is not an author of this release and has not endorsed it.
 - First commit: the package exactly as received (`spec/microtubule-stars/`).
 - Authorship: Jean-François Brisson. Mun Seok Lee is credited in the acknowledgements only.
 - Framing: SYNTHETIC classical Kuramoto only. README title/lede no longer imply a real "holographic brain" under cosmic influence. RESEARCH.md trimmed to a short literature note with "not simulated in this repo"; Orch OR / consciousness claim-y wording removed from public materials.
