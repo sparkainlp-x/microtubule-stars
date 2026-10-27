@@ -19,6 +19,17 @@ Cue a stored pattern (phases plus noise), evolve the ring for a few hundred tick
 | 0.35 | 0.327 | 0.432 |
 | 0.60 | 0.297 | 0.422 |
 
+Spread and paired effect (same 30 seeds; computed by `python -m microtubule_stars`). "Paired diff" is control dwell minus drive dwell for the same seed; the interval is a percentile bootstrap over seeds (5000 resamples, fixed generator, deterministic).
+
+| eps | dwell SD across seeds | paired diff vs control | 95% bootstrap interval | seeds where the drive helped |
+|---|---|---|---|---|
+| 0.00 (control) | 0.209 | n/a | n/a | n/a |
+| 0.15 | 0.201 | 0.027 | [0.014, 0.039] | 3 of 30 |
+| 0.35 | 0.186 | 0.065 | [0.046, 0.085] | 2 of 30 |
+| 0.60 | 0.191 | 0.095 | [0.075, 0.116] | 0 of 30 |
+
+The seed-to-seed SD (about 0.2) is large next to the means, so the unpaired means alone would not show the effect. Paired by seed, the degradation is consistent in sign and grows with eps.
+
 - Control dwell (0.391) is about 3× chance: the memory works, and decays under Kuramoto washout.
 - The slow drive **degrades** recall monotonically. No rescue at the cue-noise levels tested in the original package.
 - Phase-locking value between the collective phase and the drive: **0.0059** (no 1:1 locking across scales). A frequency scan in the design notes shows no resonance peak — flat disruption.
@@ -29,7 +40,7 @@ Reading: unstructured gain modulation adds washout variance. Real neural cross-f
 
 ```bash
 python -m microtubule_stars                                    # the table above
-pip install -r requirements-dev.txt && python -m pytest -q     # 16 tests, warnings are errors
+pip install -r requirements-dev.txt && python -m pytest -q     # 18 tests, warnings are errors
 ```
 
 ```python
@@ -47,6 +58,7 @@ Invalid input (empty pattern list, length mismatches, non-positive sizes, negati
 - The drive is a model chosen for scale separation, not measured from any star.
 - One memory architecture (phase-pattern hologram). The negative result is about *this* coupling, not all cross-scale coupling.
 - Toy scale (N=64, P=8).
+- The phase-locking value (0.0059) is a single seed (7) at eps = 0.35 with no null distribution (for example phase-randomised surrogates), so it is a description, not a test. Adding that control needs a new experiment and is not done here.
 
 See [DESIGN.md](DESIGN.md).
 
