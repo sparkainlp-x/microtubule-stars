@@ -95,3 +95,18 @@ def test_cli(capsys):
     assert main() == 0
     out = capsys.readouterr().out
     assert "SYNTHETIC" in out and "Verified" not in out
+
+
+def test_paired_bootstrap_is_deterministic_and_brackets_mean():
+    from microtubule_stars.__main__ import paired_bootstrap
+    diffs = [0.1, 0.2, 0.15, 0.05, 0.12, 0.18]
+    m, lo, hi = paired_bootstrap(diffs, n_boot=500)
+    assert abs(m - sum(diffs) / len(diffs)) < 1e-12
+    assert lo <= m <= hi
+    assert (m, lo, hi) == paired_bootstrap(diffs, n_boot=500)
+
+
+def test_paired_bootstrap_rejects_empty():
+    from microtubule_stars.__main__ import paired_bootstrap
+    with pytest.raises(ValueError):
+        paired_bootstrap([])
